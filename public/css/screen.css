@@ -51,7 +51,7 @@ h1 {
   background-size: cover;
   -webkit-background-clip: text;
   letter-spacing: -1px;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   width: 85%;
 }
 h1 .it {
@@ -69,172 +69,138 @@ h1 a:after {
   height: 0.15vw;
   bottom: 0.3vw;
   background-color: #212121;
-  -webkit-transition: width 0.2s;
-  -moz-transition: width 0.2s;
-  -o-transition: width 0.2s;
-  -ms-transition: width 0.2s;
-  transition: width 0.2s;
+  -webkit-transition: width 0.1s ease-out;
+  -moz-transition: width 0.1s ease-out;
+  -o-transition: width 0.1s ease-out;
+  -ms-transition: width 0.1s ease-out;
+  transition: width 0.1s ease-out;
+  width: 0;
 }
 h1 a:before {
   left: 0%;
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 h1 a:after {
   left: 30%;
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  -ms-transition-delay: 0.2s;
-  transition-delay: 0.2s;
 }
 h1 a:hover:before {
   width: 19.9%;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
 }
 h1 a:hover:after {
   width: 70%;
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 pre {
   background: #fff;
   padding: 10px;
+}
+.contact {
+  position: absolute;
+  bottom: 16px;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.contact li {
+  display: inline;
+}
+.contact a {
+  font-family: "Montserrat", Didot, Serif;
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: #444;
+  padding: 10px 10px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+.contact a:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 2px;
+  background-color: #53ff6e;
+  width: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.contact a:hover {
+  color: #53ff6e;
+  -webkit-text-fill-color: transparent;
+  background: -webkit--webkit-linear-gradient(transparent, transparent), url("../imgs/30_2.gif") repeat;
+  background: -webkit--moz-linear-gradient(transparent, transparent), url("../imgs/30_2.gif") repeat;
+  background: -webkit--o-linear-gradient(transparent, transparent), url("../imgs/30_2.gif") repeat;
+  background: -webkit--ms-linear-gradient(transparent, transparent), url("../imgs/30_2.gif") repeat;
+  background: -webkit-linear-gradient(transparent, transparent), url("../imgs/30_2.gif") repeat;
+  background: -o--webkit-linear-gradient(transparent, transparent);
+  background: -o--moz-linear-gradient(transparent, transparent);
+  background: -o--o-linear-gradient(transparent, transparent);
+  background: -o--ms-linear-gradient(transparent, transparent);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -webkit-background-clip: text;
+}
+.contact a:hover:before {
+  color: #53ff6e;
+  -webkit-text-fill-color: transparent;
+  background: -webkit--webkit-linear-gradient(transparent, transparent), url("../imgs/30_2.gif") repeat;
+  background: -webkit--moz-linear-gradient(transparent, transparent), url("../imgs/30_2.gif") repeat;
+  background: -webkit--o-linear-gradient(transparent, transparent), url("../imgs/30_2.gif") repeat;
+  background: -webkit--ms-linear-gradient(transparent, transparent), url("../imgs/30_2.gif") repeat;
+  background: -webkit-linear-gradient(transparent, transparent), url("../imgs/30_2.gif") repeat;
+  background: -o--webkit-linear-gradient(transparent, transparent);
+  background: -o--moz-linear-gradient(transparent, transparent);
+  background: -o--o-linear-gradient(transparent, transparent);
+  background: -o--ms-linear-gradient(transparent, transparent);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 30%;
+  left: 35%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
 }
 @media (min-width: 568px) {
   h1 {
     font-size: 4vw;
     white-space: nowrap;
   }
-}
-@-moz-keyframes dot {
-  0% {
-    -webkit-text-fill-color: #e91e63;
+  .context {
+    bottom: 24px;
   }
-  20% {
-    -webkit-text-fill-color: #00bcd4;
-  }
-  40% {
-    -webkit-text-fill-color: #ff5722;
-  }
-  60% {
-    -webkit-text-fill-color: #9c27b0;
-  }
-  80% {
-    -webkit-text-fill-color: #26a69a;
-  }
-}
-@-webkit-keyframes dot {
-  0% {
-    -webkit-text-fill-color: #e91e63;
-  }
-  20% {
-    -webkit-text-fill-color: #00bcd4;
-  }
-  40% {
-    -webkit-text-fill-color: #ff5722;
-  }
-  60% {
-    -webkit-text-fill-color: #9c27b0;
-  }
-  80% {
-    -webkit-text-fill-color: #26a69a;
-  }
-}
-@-o-keyframes dot {
-  0% {
-    -webkit-text-fill-color: #e91e63;
-  }
-  20% {
-    -webkit-text-fill-color: #00bcd4;
-  }
-  40% {
-    -webkit-text-fill-color: #ff5722;
-  }
-  60% {
-    -webkit-text-fill-color: #9c27b0;
-  }
-  80% {
-    -webkit-text-fill-color: #26a69a;
-  }
-}
-@keyframes dot {
-  0% {
-    -webkit-text-fill-color: #e91e63;
-  }
-  20% {
-    -webkit-text-fill-color: #00bcd4;
-  }
-  40% {
-    -webkit-text-fill-color: #ff5722;
-  }
-  60% {
-    -webkit-text-fill-color: #9c27b0;
-  }
-  80% {
-    -webkit-text-fill-color: #26a69a;
-  }
-}
-@-moz-keyframes underline {
-  0% {
-    background-color: #e91e63;
-  }
-  20% {
-    background-color: #00bcd4;
-  }
-  40% {
-    background-color: #ff5722;
-  }
-  60% {
-    background-color: #9c27b0;
-  }
-  80% {
-    background-color: #26a69a;
-  }
-}
-@-webkit-keyframes underline {
-  0% {
-    background-color: #e91e63;
-  }
-  20% {
-    background-color: #00bcd4;
-  }
-  40% {
-    background-color: #ff5722;
-  }
-  60% {
-    background-color: #9c27b0;
-  }
-  80% {
-    background-color: #26a69a;
-  }
-}
-@-o-keyframes underline {
-  0% {
-    background-color: #e91e63;
-  }
-  20% {
-    background-color: #00bcd4;
-  }
-  40% {
-    background-color: #ff5722;
-  }
-  60% {
-    background-color: #9c27b0;
-  }
-  80% {
-    background-color: #26a69a;
-  }
-}
-@keyframes underline {
-  0% {
-    background-color: #e91e63;
-  }
-  20% {
-    background-color: #00bcd4;
-  }
-  40% {
-    background-color: #ff5722;
-  }
-  60% {
-    background-color: #9c27b0;
-  }
-  80% {
-    background-color: #26a69a;
+  .contact a {
+    padding: 10px 20px;
   }
 }
