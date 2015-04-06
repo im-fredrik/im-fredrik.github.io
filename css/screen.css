@@ -122,7 +122,7 @@ pre {
 .contact a {
   font-family: "brandon-grotesque", "Helvetica Neue", Didot, Serif;
   letter-spacing: 3px;
-  font-size: 11px;
+  font-size: 9px;
   color: #444;
   padding: 10px 10px;
   display: inline-block;
@@ -182,5 +182,6 @@ pre {
   }
   .contact a {
     padding: 10px 20px;
+    font-size: 11px;
   }
 }
